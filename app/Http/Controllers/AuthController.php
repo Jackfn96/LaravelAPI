@@ -35,4 +35,13 @@ class AuthController extends Controller
     return User::all();
 
   }
+
+  function delete($id)
+  {
+    $user = User::find($id);
+    $result = $user->delete();
+    return("This user has been deleted ".$id);
+
+  }
+
 }
