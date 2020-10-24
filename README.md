@@ -27,12 +27,29 @@ The project can be run following these 3 initial instructions for setup, then fo
 3. Open up an application to send HTTP requests e.g. Postman.
 
 ### Registering/creating a new user.
-In Postman, enter `http://127.0.0.1:8000` in the address bar
+
 
 ### Deleting a user.
+1. In Postman, enter `http://127.0.0.1:8000/api/delete/<ENTER_USER_ID_HERE>` in the address bar, replacing <ENTER_USER_ID_HERE> with the id of the user you wish to remove.
+2. Then ensure the request type is set to DELETE.
+3. Click 'Send' to send the request.
+4. A confirmation or error message will be displayed depending on whether the request was successful or not.
 
 ### Updating an existing user.
+1. In Postman, enter `http://127.0.0.1:8000/api/update` in the address bar.
+2. Then, ensure the request type is set to POST.
+3. 
+3. Click 'Send' to send the request.
+4. A list of users and their related information is displayed.
 
 ### Listing all users.
+1. In Postman, enter `http://127.0.0.1:8000/api/users` in the address bar.
+2. Then, ensure the request type is set to GET.
+3. Click 'Send' to send the request.
+4. A list of users and their related information is displayed.
 
 ### Getting a list of handset types.
+1. In Postman, enter `http://127.0.0.1:8000/api/handsets` in the address bar.
+2. Then, ensure the request type is set to GET.
+3. Click 'Send' to send the request.
+4. A list of handsets is displayed.

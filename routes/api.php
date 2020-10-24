@@ -23,5 +23,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::post('register', [AuthController::class, 'register']);
 Route::get('users', [AuthController::class, 'users']);
 Route::delete('delete/{id}', [AuthController::class, 'delete']);
-Route::put('replace', [AuthController::class, 'replace']);
+Route::put('update', [AuthController::class, 'update']);
 Route::get('handsets', [HandsetsController::class, 'handsets']);

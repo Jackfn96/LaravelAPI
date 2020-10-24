@@ -50,7 +50,7 @@ class AuthController extends Controller
   }
   }
 
-  function replace(Request $request)
+  function update(Request $request)
   {
     try{
       $user = User::findOrFail($request->id);
