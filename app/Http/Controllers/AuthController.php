@@ -32,17 +32,22 @@ class AuthController extends Controller
     ]);
   }
 
-  public function list()
+  public function users()
   {
     return User::all();
   }
 
   public function delete($id)
   {
-    $user = User::find($id);
+    try{
+    $user = User::findorFail($id);
     $result = $user->delete();
     return("This user has been deleted ".$id);
+  }
 
+    catch(ModelNotFoundException $e){
+      return("Record deletion failed");
+  }
   }
 
   function replace(Request $request)
@@ -58,7 +63,7 @@ class AuthController extends Controller
     }
 
     catch(ModelNotFoundException $e){
-      return("fail");
+      return("Record change failed");
     }
 
 

@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\HandsetsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,6 +21,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::post('register', [AuthController::class, 'register']);
-Route::get('list', [AuthController::class, 'list']);
+Route::get('users', [AuthController::class, 'users']);
 Route::delete('delete/{id}', [AuthController::class, 'delete']);
 Route::put('replace', [AuthController::class, 'replace']);
+Route::get('handsets', [HandsetsController::class, 'handsets']);
