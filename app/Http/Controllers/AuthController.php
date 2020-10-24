@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
+use Illuminate\Database\Eloquent\ModelNotFoundException;
+
 
 class AuthController extends Controller
 {
@@ -30,18 +32,40 @@ class AuthController extends Controller
     ]);
   }
 
-  function list()
+  public function list()
   {
     return User::all();
-
   }
 
-  function delete($id)
+  public function delete($id)
   {
     $user = User::find($id);
     $result = $user->delete();
     return("This user has been deleted ".$id);
 
   }
+
+  function replace(Request $request)
+  {
+    try{
+      $user = User::findOrFail($request->id);
+      $user->name = $request->name;
+      $user->email = $request->email;
+      $user->password = bcrypt($request->password);
+
+      $result = $user->save();
+      return ("Record change successful");
+    }
+
+    catch(ModelNotFoundException $e){
+      return("fail");
+    }
+
+
+  }
+
+
+
+
 
 }

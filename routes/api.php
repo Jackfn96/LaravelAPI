@@ -22,3 +22,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::post('register', [AuthController::class, 'register']);
 Route::get('list', [AuthController::class, 'list']);
 Route::delete('delete/{id}', [AuthController::class, 'delete']);
+Route::put('replace', [AuthController::class, 'replace']);
