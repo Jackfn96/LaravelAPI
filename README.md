@@ -22,9 +22,9 @@ This project is a set of Laravel API endpoints enabling the following set of cap
 ### Initial Setup
 The project can be run following these 3 initial instructions for setup, then following the guide for the specific request mentioned after this section:
 
-1. In a terminal whilst inside the project folder, run the command run the command `php artisan db:seed` to add the specified handset data to the database.
+1. In a terminal whilst inside the project folder, run the command `php artisan db:seed` to add the specified handset data to the database.
 2. In another terminal again inside the project folder, then run the command `php artisan serve` to start the application.
-3. Open up an application to send HTTP requests (e.g. Postman).
+3. Open up any application to send HTTP requests (e.g. Postman).
 
 ### Registering/creating a new user.
 1. In Postman, enter `http://127.0.0.1:8000/api/register` in the address bar.
@@ -43,7 +43,7 @@ The project can be run following these 3 initial instructions for setup, then fo
 
 ### Updating an existing user.
 1. In Postman, enter `http://127.0.0.1:8000/api/update` in the address bar.
-2. Then, ensure the request type is set to POST.
+2. Then, ensure the request type is set to PUT.
 3. In the 'Body' tab, select 'raw' and 'JSON' data types.
 4. In the empty request box, enter the following (replacing placeholders with the necessary information):
 ```
