@@ -47,8 +47,8 @@ The project can be run following these 3 initial instructions for setup, then fo
     "name": "<ENTER_NAME_HERE>",
     "email": "<ENTER_EMAIL_HERE>",
     "password": "<ENTER_NEW_PASSWORD_HERE>"
-}`
-
+}
+`
 
 5. Click 'Send' to send the request.
 6. A list of users and their related information is displayed.
