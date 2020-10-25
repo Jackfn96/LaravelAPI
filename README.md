@@ -41,13 +41,14 @@ The project can be run following these 3 initial instructions for setup, then fo
 3. In the 'Body' tab, select 'raw' and 'JSON' data types.
 4. In the empty request box, enter the following:
 
-```{
+`{
 
     "id": <ENTER_USER_ID_HERE>,
     "name": "<ENTER_NAME_HERE>",
     "email": "<ENTER_EMAIL_HERE>",
     "password": "<ENTER_NEW_PASSWORD_HERE>"
-}```
+}`
+
 
 5. Click 'Send' to send the request.
 6. A list of users and their related information is displayed.
