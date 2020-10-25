@@ -42,7 +42,9 @@ The project can be run following these 3 initial instructions for setup, then fo
 4. In the empty request box, enter the following:
 
 `{
+
     "id": <ENTER_USER_ID_HERE>,
+    
     "name": "<ENTER_NAME_HERE>",
     "email": "<ENTER_EMAIL_HERE>",
     "password": "<ENTER_NEW_PASSWORD_HERE>"
