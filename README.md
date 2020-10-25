@@ -9,7 +9,7 @@
 
 ## About this Project
 
-This project is a set of API endpoints enabling the following set of capabilities:
+This project is a set of Laravel API endpoints enabling the following set of capabilities:
 
 1. Registering/creating a new user.
 2. Deleting a user.
@@ -27,7 +27,13 @@ The project can be run following these 3 initial instructions for setup, then fo
 3. Open up an application to send HTTP requests e.g. Postman.
 
 ### Registering/creating a new user.
-
+1. In Postman, enter `http://127.0.0.1:8000/api/register` in the address bar.
+2. Then, ensure the request type is set to POST.
+3. In the 'Body' tab, select 'form data'.
+4. Insert 3 keys called 'name', 'email' and 'password'.
+5. In the adjacent field for each key, enter the corresponding data.
+6. Click 'Send' to send the request.
+7. A confirmation or error message will be displayed depending on whether the request was successful or not.
 
 ### Deleting a user.
 1. In Postman, enter `http://127.0.0.1:8000/api/delete/<ENTER_USER_ID_HERE>` in the address bar, replacing <ENTER_USER_ID_HERE> with the id of the user you wish to remove.
